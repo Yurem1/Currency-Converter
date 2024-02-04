@@ -2,11 +2,15 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 
-const Options = React.forwardRef(function Options(props, ref) {
+interface IOptions {
+    classes?: string
+}
+
+const Options = React.forwardRef<HTMLDivElement, IOptions>(function Options(props, ref) {
     return (
-        <div>
-            <fieldset>
-                <legend>Choose Currency</legend>
+        <div className={`${props.classes}`}>
+            <fieldset className='flex flex-row gap-3.5 items-center justify-center'>
+                <legend className='text-center	'>Choose Currency</legend>
                 <div>
                     <input 
                     type='radio' 
