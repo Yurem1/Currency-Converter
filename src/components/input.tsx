@@ -1,8 +1,13 @@
 import React, { forwardRef } from 'react';
 
-const Input = forwardRef<HTMLInputElement>(function Input(props, ref) {
+interface IParams {
+    classes?: string;
+}
+
+const Input = forwardRef<HTMLInputElement, IParams>(function Input(props, ref) {
+1
     return (
-        <div>
+        <div className={`inline-block align-top ${props.classes}`}>
             <input 
             ref={ref}
             type='number' 
