@@ -1,14 +1,10 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 
-interface IOptions {
-    classes?: string
-}
-
-const Options = React.forwardRef<HTMLDivElement, IOptions>(function Options(props, ref) {
+const Options = React.forwardRef<HTMLDivElement>(function Options(props, ref) {
     return (
-        <div className={`${props.classes}`}>
+        <div>
             <fieldset className='flex flex-row gap-3.5 items-center justify-center'>
                 <legend className='text-center	'>Choose Currency</legend>
                 <div>
@@ -26,6 +22,14 @@ const Options = React.forwardRef<HTMLDivElement, IOptions>(function Options(prop
                     value='GBP' 
                     name='currency'/>
                     <label htmlFor='POUND'>GBP</label>
+                </div>
+                <div>
+                    <input 
+                    type='radio' 
+                    id='EURO' 
+                    value='EUR' 
+                    name='currency'/>
+                    <label htmlFor='EURO'>EUR</label>
                 </div>
             </fieldset>
         </div>
