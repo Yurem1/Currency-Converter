@@ -9,7 +9,7 @@ import Exchange from '@/utility/exchange';
 export default function Converter(): React.JSX.Element {
     const inputRef = useRef<HTMLInputElement>();
     const outputRef = useRef<HTMLInputElement>();
-    console.log(Exchange.findCurrency())
+
     return (
         <div className='md flex flex-col gap-3.5'>
             <Input/>
