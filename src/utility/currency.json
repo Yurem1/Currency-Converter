@@ -1,11 +1,22 @@
 {
-    "FRF": {
-        "value": 0.15
-    },
     "GBP": {
-        "value": 1.26
+        "name": "POUND",
+        "value": 0.64
     },
-    "EUR": {
-        "value": 1.08
+    "FRF": {
+        "name": "FRANC",
+        "value": 6.07426
+    },
+    "ITL": {
+        "name": "LIRA",
+        "value": 1793.62
+    },
+    "DEM": {
+        "name": "DEUTSCHE",
+        "value": 1.811
+    },
+    "ESP": {
+        "name": "PTS",
+        "value": 154.076
     }
 }
