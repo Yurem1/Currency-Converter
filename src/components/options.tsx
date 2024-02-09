@@ -1,15 +1,25 @@
 'use client'
 
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 import CURRENCY_DATA from '../utility/currency.json';
 
-const Options = React.forwardRef<HTMLDivElement>(function Options(props, ref) { 
+interface IOptionsParams {
+    change?: (
+        event: ChangeEvent<HTMLInputElement>
+    ) => void;
+}
 
+const Options = React.forwardRef<HTMLInputElement, IOptionsParams>(function Options(props, ref) { 
+    
     function displayOptions(): React.JSX.Element[] {
         return Object.entries(CURRENCY_DATA).map(([key, data]) => {
             return (
                 <div key={data.name}>
-                    <input type='radio' name='currency' value={data.value}/>
+                    <input ref={ref} itemID={key} type='radio' name='currency' value={
+                        data.value
+                    } onChange={
+                        props.change
+                    }/>
                     <label htmlFor={data.name}>{key}</label>
                 </div>
             );
