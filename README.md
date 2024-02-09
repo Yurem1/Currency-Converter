@@ -16,4 +16,4 @@
  - **Spanish pesetas = 154.076**
  
 ### Preview: 
- ![preview](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzdzM2Jld2RycXpuM281dmQ2NTNzdWFuMWhxMDNrYTA2aGgxeHppciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xazVX2EgXtqxDP3n5l/source.gif)
+![preview](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzdzM2Jld2RycXpuM281dmQ2NTNzdWFuMWhxMDNrYTA2aGgxeHppciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xazVX2EgXtqxDP3n5l/source.gif)
