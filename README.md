@@ -2,8 +2,8 @@
 # 2014 National SkillsUSA Project
 ### Computer Programming, Computer Information System, Computer Competition
 
-# Currency Conversion ~~Program~~ *Web Application*
-## Prompt: 
+## Currency Conversion ~~Program~~ *Web Application*
+### Prompt: 
 
 > **You will write a program to create a screen which will allow the user**
 > **to enter and convert an U.S dollar amount to the currency of the**
