@@ -17,3 +17,5 @@
  
 ### Preview: 
 ![currency-converter-gif2](https://github.com/Yurem1/currency-conversion/assets/142750684/13967a66-63ec-4d15-8f1f-d2e1d38a18ba)
+
+### *note: this is not an official submission, this is purely done to practice for real SkillsUSA competitions and it does not fully follow the constraints* 
