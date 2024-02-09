@@ -16,4 +16,4 @@
  - **Spanish pesetas = 154.076**
  
 ### Preview: 
-![currency-converter-gif](https://github.com/Yurem1/currency-conversion/assets/142750684/33157764-720c-4c1f-aefc-e8b817968cd5)
+![currency-converter-gif2](https://github.com/Yurem1/currency-conversion/assets/142750684/13967a66-63ec-4d15-8f1f-d2e1d38a18ba)
