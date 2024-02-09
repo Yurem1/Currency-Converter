@@ -10,5 +10,5 @@ export default function Info(): React.JSX.Element {
                 Type in how much you wanna convert in dollars
             </p>
         </div>
-    )
+    );
 }
