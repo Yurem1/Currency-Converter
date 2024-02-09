@@ -1,9 +1,18 @@
 import React from 'react';
 
+/**
+ * Represents the parameters for the output component.
+ */
 interface IOutputParams {
-    value?: number | undefined
+    value?: number | undefined;
 }
 
+/**
+ * Renders the output component.
+ * @param {Object} props - The component props.
+ * @param {number} props.value - The value to display in the output.
+ * @returns {JSX.Element} - The rendered output component.
+ */
 export default function Output({value}: IOutputParams) {
     return (
         <div>

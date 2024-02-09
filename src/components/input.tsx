@@ -1,12 +1,15 @@
 import React, { ChangeEvent, forwardRef } from 'react';
+import { IInputParams } from './options';
 
-interface IinputParams {
-    change?: (
-        event: ChangeEvent<HTMLInputElement>
-    ) => void;
-}
-
-const Input = forwardRef<HTMLInputElement, IinputParams>(function Input(props, ref) {
+/**
+ * Input component for entering a numeric value.
+ *
+ * @component
+ * @param {IinputParams} props - The input component props.
+ * @param {React.Ref<HTMLInputElement>} ref - The ref for the input element.
+ * @returns {JSX.Element} The rendered input component.
+ */
+const Input = forwardRef<HTMLInputElement, IInputParams>(function Input(props, ref) {
     return (
         <div className={`inline-block align-top`}>
             <input ref={ref} type='number' min={0} placeholder='Enter Amount' onChange={props.change}

@@ -3,23 +3,32 @@
 import React, { ChangeEvent } from 'react';
 import CURRENCY_DATA from '../utility/currency.json';
 
-interface IOptionsParams {
+/**
+ * Represents the parameters for the input components.
+ */
+export interface IInputParams {
     change?: (
         event: ChangeEvent<HTMLInputElement>
     ) => void;
 }
 
-const Options = React.forwardRef<HTMLInputElement, IOptionsParams>(function Options(props, ref) { 
+/**
+ * Options component for selecting a currency.
+ * @param props - The component props.
+ * @param ref - The ref for the input element.
+ * @returns The rendered Options component.
+ */
+const Options = React.forwardRef<HTMLInputElement, IInputParams>(function Options(props, ref) { 
     
+    /**
+     * Displays the currency options.
+     * @returns An array of JSX elements representing the currency options.
+     */
     function displayOptions(): React.JSX.Element[] {
         return Object.entries(CURRENCY_DATA).map(([key, data]) => {
             return (
                 <div key={data.name}>
-                    <input ref={ref} itemID={key} type='radio' name='currency' value={
-                        data.value
-                    } onChange={
-                        props.change
-                    }/>
+                    <input ref={ref} itemID={key} type='radio' name='currency' value={data.value} onChange={props.change}/>
                     <label htmlFor={data.name}>{key}</label>
                 </div>
             );

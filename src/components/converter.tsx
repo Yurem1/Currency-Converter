@@ -6,6 +6,10 @@ import Options from './options';
 import Output from './output';
 import Exchange, { IExchangeParams } from '@/utility/exchange';
 
+/**
+ * Renders a currency converter component.
+ * @returns The JSX element representing the currency converter.
+ */
 export default function Converter(): React.JSX.Element {
     const inputRef = React.useRef<HTMLInputElement>(null);
     const optionsRef = React.useRef<HTMLInputElement>(null);
