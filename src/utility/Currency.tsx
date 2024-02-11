@@ -1,4 +1,4 @@
-import CURRENCY_DATA from '../utility/currency.json'
+import CURRENCY_DATA from '@/files/currency.json'
 
 /**
  * Represents the parameters for a currency exchange.
@@ -11,7 +11,7 @@ export interface IExchangeParams {
 /**
  * Represents a utility class for currency exchange operations.
  */
-export default class Exchange {
+export default class Currency {
     /**
      * Finds the value of a currency in the CURRENCIES object.
      * @param obj - The object containing currency name, and amount to exchange
