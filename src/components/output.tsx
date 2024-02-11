@@ -13,7 +13,7 @@ interface IOutputParams {
  * @param {number} props.value - The value to display in the output.
  * @returns {JSX.Element} - The rendered output component.
  */
-export default function Output({value}: IOutputParams) {
+export default function Output({value}: IOutputParams): React.JSX.Element {
     return (
         <div>
             <input type='text' readOnly={true} value={value ? value : 0} 
