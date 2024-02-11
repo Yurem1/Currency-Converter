@@ -1,6 +1,6 @@
 
 # 2014 National SkillsUSA Project
-## Currency Conversion ~~Program~~ *Web Application*
+## Currency Conversion Program
 ### Computer Programming, Computer Information System, Computer Competition
 
 ### Prompt: 
