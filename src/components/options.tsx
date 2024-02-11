@@ -1,7 +1,7 @@
 'use client'
 
 import React, { ChangeEvent } from 'react';
-import CURRENCY_DATA from '../utility/currency.json';
+import CURRENCY_DATA from '@/files/currency.json';
 
 /**
  * Represents the parameters for the input components.

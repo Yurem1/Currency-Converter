@@ -1,5 +1,5 @@
 import React, { ChangeEvent, forwardRef } from 'react';
-import { IInputParams } from './options';
+import { IInputParams } from '@/components/options';
 
 /**
  * Input component for entering a numeric value.
