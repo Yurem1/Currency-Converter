@@ -1,10 +1,10 @@
 'use client';
 
 import React, { ChangeEvent } from 'react';
-import Input from './input';
-import Options from './options';
-import Output from './output';
-import Exchange, { IExchangeParams } from '@/utility/exchange';
+import Input from '@/components/input';
+import Options from '@/components/options';
+import Output from '@/components/output';
+import Currency, { IExchangeParams } from '@/utility/Currency';
 
 /**
  * Renders a currency converter component.
@@ -15,23 +15,30 @@ export default function Converter(): React.JSX.Element {
     const optionsRef = React.useRef<HTMLInputElement>(null);
 
     const [state, dispatch] = React.useReducer(
-        Exchange.reducer, { 
+        Currency.reducer, { 
             currency: '',
-            amount: 0
+            amount: 0,
         } as IExchangeParams
     )
 
-
-    const inputHandler = (event: ChangeEvent<HTMLInputElement>) => {
-        dispatch(Number(event.target.value));
+    const inputHandler: (
+        event: ChangeEvent<HTMLInputElement>
+    ) => void = (event: ChangeEvent<HTMLInputElement>) => {
+        dispatch(Number(
+            event.target.value
+        ));
     }
 
-    const optionsHandler = (event: ChangeEvent<HTMLInputElement>) => {
-        dispatch(String(event.target.getAttribute('itemID')))
+    const optionsHandler: (
+        event: ChangeEvent<HTMLInputElement>
+    ) => void = (event: ChangeEvent<HTMLInputElement>) => {
+        dispatch(String(
+            event.target.getAttribute('itemID')
+        ));
     }
 
     const outputValue: () => number = () => {
-        return Exchange.exchange(state)
+        return Currency.exchange(state);
     }
 
     return (
