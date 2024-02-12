@@ -17,6 +17,6 @@
 ### Preview: 
 ![currency-converter-gif2](https://github.com/Yurem1/currency-conversion/assets/142750684/13967a66-63ec-4d15-8f1f-d2e1d38a18ba)
 
-*Visit Website [Here](https://currency-conversion-portfolio-754a3d1f2714.herokuapp.com/)*
+### *Visit Website [Here](https://currency-conversion-portfolio-754a3d1f2714.herokuapp.com/)*
 
 *note: this is not an official submission, this is purely done for enjoyment and practice for real SkillsUSA competitions*
