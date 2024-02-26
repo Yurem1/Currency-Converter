@@ -1,3 +1,6 @@
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
 # 2014 National SkillsUSA Project
 ## Currency Conversion Program
 ### Computer Programming, Computer Information System, Computer Competition
